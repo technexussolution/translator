@@ -1,0 +1,82 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+}
+
+android {
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+    namespace 'com.technexus.solutions.soft'
+    compileSdk 34
+
+    defaultConfig {
+        applicationId "com.technexus.solutions.soft"
+        minSdk 24
+        targetSdk 34
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    dataBinding {
+        enabled = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.10.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    implementation group: 'com.google.android.gms', name: 'play-services-vision', version: '15.0.0'
+
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    implementation(platform("org.jetbrains.kotlin:kotlin-bom:1.8.0"))
+    implementation 'com.github.bumptech.glide:glide:4.16.0'
+    implementation "com.airbnb.android:lottie:6.2.0"
+
+    implementation 'com.google.firebase:firebase-analytics:21.5.0'
+    implementation 'com.google.firebase:firebase-messaging:23.3.1'
+    implementation 'com.google.firebase:firebase-config:21.6.0'
+    implementation 'com.google.firebase:firebase-crashlytics:18.6.0'
+
+
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+    implementation 'com.google.ads.mediation:facebook:6.16.0.0'
+
+    implementation "androidx.lifecycle:lifecycle-runtime:2.6.2"
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0"
+    implementation "androidx.lifecycle:lifecycle-common-java8:2.6.2"
+    annotationProcessor "androidx.lifecycle:lifecycle-compiler:2.6.2"
+
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.28'
+
+
+}

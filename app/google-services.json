@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "171738679043",
+    "project_id": "translator-d3c7c",
+    "storage_bucket": "translator-d3c7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171738679043:android:e4c4b2bd3f7fdee675cb36",
+        "android_client_info": {
+          "package_name": "com.technexus.solutions.soft"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDWZMhjdBwwbbOeUf4vvBtNoGCisx19Q7Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

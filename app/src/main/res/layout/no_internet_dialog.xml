@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@android:color/transparent"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/splash_progress"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="5dp"
+            android:padding="20dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_fileName="no_internet.json"
+            app:lottie_loop="true" />
+
+        <TextView
+            android:id="@+id/tv_no_internet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/poppins_regular"
+            android:gravity="center"
+            android:text="No Internet Connection!"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/splash_progress" />
+
+        <TextView
+            android:id="@+id/tv_retry"
+            android:layout_width="140dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/xwsd_round_start_button"
+            android:fontFamily="@font/poppins_semi_bold"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingTop="7dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="RETRY"
+            android:textColor="@color/white"
+            android:textSize="17dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_no_internet" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateTint="@color/theme_color"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="@+id/tv_retry"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_retry"
+            app:layout_constraintRight_toRightOf="@+id/tv_retry"
+            app:layout_constraintTop_toTopOf="@+id/tv_retry" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

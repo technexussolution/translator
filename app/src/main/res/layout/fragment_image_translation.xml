@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/poppins_semi_bold"
+        android:text="Scan to Translate"
+        android:textSize="20sp" />
+
+    <View
+        android:id="@+id/theToolbarView"
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_below="@+id/title"
+        android:background="@color/colorSecondary" />
+
+    <SurfaceView
+        android:id="@+id/surfaceV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/theToolbarView" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/textV"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_toLeftOf="@+id/fabCamera"
+            android:background="@drawable/bg_et"
+            android:fontFamily="@font/roboto"
+            android:gravity="center"
+            android:maxLines="4"
+            android:minHeight="50dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fabCamera"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/ic_tick"
+            android:tint="@color/white"
+            app:backgroundTint="@color/theme_color" />
+    </RelativeLayout>
+</RelativeLayout>

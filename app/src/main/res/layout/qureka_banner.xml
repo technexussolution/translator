@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/qurekaBanner"
+    android:layout_height="65dp"
+    app:cardCornerRadius="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="#222222"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:padding="3dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                android:weightSum="10">
+
+                <ImageView
+                    android:id="@+id/icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:padding="2dp"
+                    android:layout_weight="8"
+                    android:src="@drawable/aviator_qureka1" />
+
+                <LinearLayout
+                    android:id="@+id/background"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="3dp"
+                    android:layout_weight="1.5"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:layout_marginRight="15dp"
+                        android:orientation="horizontal">
+
+
+                        <TextView
+                            android:id="@+id/primary"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_weight="50"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/poppins_medium"
+                            android:lines="1"
+                            android:paddingStart="2dp"
+                            android:paddingTop="5dp"
+                            android:text="Play &amp; Win 50000 Coins Daily"
+                            android:textColor="@color/white"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="22dp"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginTop="4dp"
+                            android:gravity="center"
+                            app:cardBackgroundColor="#3F51B5">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+
+                                android:gravity="center"
+                                android:text="AD"
+                                android:textColor="#fff"
+                                android:textSize="11dp"
+                                android:textStyle="bold" />
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/secondary"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="10dp"
+                            android:ellipsize="end"
+                            android:fontFamily="@font/poppins_medium"
+                            android:gravity="bottom"
+                            android:lines="1"
+                            android:maxLines="1"
+                            android:text="Direct withdraw to paytm and paypal acc."
+                            android:textColor="#DFDFDF"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnInsatll"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/aviator_qureka_install_btn"
+                android:clickable="false"
+                android:lines="1"
+                android:text="Install"
+                android:textColor="@color/black" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorAccent">@color/theme_color</color>
+    <color name="colorP">@color/theme_color</color>
+    <color name="colorPrimaryDark">#3700b3</color>
+    <color name="colorPrimaryNew">@color/theme_color</color>
+    <color name="colorSecondary">#657DFF</color>
+    <color name="imageColor">#61677e</color>
+    <color name="main_bg">#EDF8FF</color>
+    <color name="white">#fff</color>
+    <color name="black">#000000</color>
+
+    <color name="splash_bg_color">#2a2c33</color>
+    <color name="theme_color">#566ff9</color>
+    <color name="secondary_color">#657DFF</color>
+    <color name="ads_bg_color">@color/white</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="gray">#5F5F5F</color>
+    <color name="dark_gray">#191919</color>
+</resources>

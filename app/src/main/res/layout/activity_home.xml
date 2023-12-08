@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/bottomNav" />
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNav"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/bg_nav"
+            android:theme="@style/Nav.NavigationDrawer"
+            app:elevation="1dp"
+            app:labelVisibilityMode="unlabeled"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:menu="@menu/menu_nav" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/backPressedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e6000000"
+        android:clickable="true"
+        android:visibility="gone">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/main_bg">
+
+            <TextView
+                android:id="@+id/txt_exit"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentTop="true"
+                android:fontFamily="@font/roboto"
+                android:gravity="center"
+                android:text="Want to Exit?"
+                android:textColor="#000"
+                android:textSize="22sp" />
+
+            <View
+                android:id="@+id/top_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/txt_exit"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="#40000000" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@+id/bottom_view"
+                android:layout_below="@+id/top_view">
+
+                <FrameLayout
+                    android:id="@+id/nativeAdPlaceHolderBack"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginBottom="3dp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/bottom_view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_above="@+id/bottom_container"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="#40000000" />
+
+            <RelativeLayout
+                android:id="@+id/bottom_container"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/gr_primary">
+
+                <TextView
+                    android:id="@+id/txt_exittwo"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_alignParentTop="true"
+                    android:fontFamily="@font/roboto"
+                    android:gravity="center"
+                    android:text="Tap Again to Exit"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

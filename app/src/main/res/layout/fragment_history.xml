@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_bg">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/roboto"
+                android:text="Translation History"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/theToolbarView"
+                android:layout_width="match_parent"
+                android:layout_height="0.2dp"
+                android:layout_below="@+id/title"
+                android:background="#993b675d" />
+
+            <TextView
+                android:id="@+id/emptytext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/roboto"
+                android:gravity="center_horizontal"
+                android:text="No Translation History"
+                android:textAlignment="center"
+                android:textSize="25dp"
+                android:visibility="gone" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/datarev"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nativeAdPlaceHolder"
+                android:layout_marginBottom="2dp"
+                android:background="@android:color/transparent" />
+
+            <FrameLayout
+                android:id="@+id/nativeAdPlaceHolder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/theToolbarView"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/bg_et" />
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:backgroundTint="@color/colorSecondary"
+        android:src="@drawable/delete_icon"
+        android:tint="@android:color/white" />
+</RelativeLayout>
