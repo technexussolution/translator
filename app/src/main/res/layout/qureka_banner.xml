@@ -34,7 +34,7 @@
                     android:layout_marginLeft="3dp"
                     android:padding="2dp"
                     android:layout_weight="8"
-                    android:src="@drawable/aviator_qureka1" />
+                    android:src="@drawable/lt_aviator_qureka1" />
 
                 <LinearLayout
                     android:id="@+id/background"
@@ -115,7 +115,7 @@
                 android:layout_gravity="center"
                 android:layout_marginLeft="10dp"
                 android:layout_marginRight="5dp"
-                android:background="@drawable/aviator_qureka_install_btn"
+                android:background="@drawable/lt_aviator_qureka_install_btn"
                 android:clickable="false"
                 android:lines="1"
                 android:text="Install"

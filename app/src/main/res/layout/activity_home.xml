@@ -24,7 +24,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginRight="15dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/bg_nav"
+            android:background="@drawable/lt_bg_nav"
             android:theme="@style/Nav.NavigationDrawer"
             app:elevation="1dp"
             app:labelVisibilityMode="unlabeled"
@@ -97,7 +97,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:layout_alignParentBottom="true"
-                android:background="@drawable/gr_primary">
+                android:background="@drawable/lt_gr_primary">
 
                 <TextView
                     android:id="@+id/txt_exittwo"

@@ -1,4 +1,4 @@
-package com.technexus.solutions.soft;
+package com.translator.quick.easy;
 
 import org.junit.Test;
 

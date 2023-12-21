@@ -4,15 +4,15 @@
     <color name="colorP">@color/theme_color</color>
     <color name="colorPrimaryDark">#3700b3</color>
     <color name="colorPrimaryNew">@color/theme_color</color>
-    <color name="colorSecondary">#657DFF</color>
+    <color name="colorSecondary">@color/secondary_color</color>
     <color name="imageColor">#61677e</color>
     <color name="main_bg">#EDF8FF</color>
     <color name="white">#fff</color>
     <color name="black">#000000</color>
 
     <color name="splash_bg_color">#2a2c33</color>
-    <color name="theme_color">#566ff9</color>
-    <color name="secondary_color">#657DFF</color>
+    <color name="theme_color">#0D7D4D</color>
+    <color name="secondary_color">#30BA7F</color>
     <color name="ads_bg_color">@color/white</color>
 
     <color name="transparent">#00000000</color>

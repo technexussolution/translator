@@ -2,7 +2,7 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item
         android:id="@+id/home_item"
-        android:icon="@drawable/ic_home_s"
+        android:icon="@drawable/lt_ic_home_s"
         android:title="" />
     <item
         android:id="@+id/voice"
@@ -14,6 +14,6 @@
         android:title="" />
     <item
         android:id="@+id/history"
-        android:icon="@drawable/ic_history_s"
+        android:icon="@drawable/lt_ic_history_s"
         android:title="" />
 </menu>

@@ -12,7 +12,7 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="15dp"
-        android:background="@drawable/bg_language_selector">
+        android:background="@drawable/lt_bg_language_selector">
 
         <RelativeLayout
             android:id="@+id/source_picker"
@@ -45,7 +45,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginStart="5dp"
                 android:layout_toRightOf="@+id/source_name"
-                android:src="@drawable/ic_down_arraw" />
+                android:src="@drawable/lt_ic_down_arraw" />
         </RelativeLayout>
 
         <ImageView
@@ -53,7 +53,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_centerInParent="true"
-            android:src="@drawable/ic_exchange" />
+            android:src="@drawable/lt_ic_exchange" />
 
         <RelativeLayout
             android:id="@+id/target_picker"
@@ -86,7 +86,7 @@
                 android:layout_centerVertical="true"
                 android:layout_marginStart="5dp"
                 android:layout_toRightOf="@+id/target_name"
-                android:src="@drawable/ic_down_arraw" />
+                android:src="@drawable/lt_ic_down_arraw" />
         </RelativeLayout>
     </RelativeLayout>
 

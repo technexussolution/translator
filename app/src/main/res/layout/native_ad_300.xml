@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@drawable/round_ad_bg">
+    android:background="@drawable/lt_round_ad_bg">
 
     <LinearLayout
         android:id="@+id/mainView"
@@ -137,7 +137,7 @@
             android:layout_marginTop="7dp"
             android:layout_marginEnd="10dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/button_bg_ad"
+            android:background="@drawable/lt_button_bg_ad"
             android:backgroundTint="@color/black"
             android:fontFamily="@font/poppins_bold"
             android:gravity="center"

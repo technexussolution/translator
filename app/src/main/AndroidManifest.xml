@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.technexus.solutions.soft">
+    package="com.translator.quick.easy">
 
 
     <uses-feature
@@ -15,7 +15,7 @@
     <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
 
     <application
-        android:name=".MyApp"
+        android:name="com.translator.quick.easy.MyApp"
         android:allowBackup="true"
         android:extractNativeLibs="false"
         android:icon="@mipmap/ic_launcher"
@@ -25,17 +25,17 @@
         android:theme="@style/AppThemeTranslator"
         android:usesCleartextTraffic="true">
         <activity
-            android:name="com.technexus.solutions.soft.translator_activities.HomeActivity"
+            android:name="com.translator.quick.easy.LT_activities.LT_HomeActivity"
             android:theme="@style/AppThemeTranslator" />
         <activity
-            android:name="com.technexus.solutions.soft.translator_activities.StartActivityExtra4"
+            android:name="com.translator.quick.easy.LT_activities.LT_StartActivityExtra4"
             android:theme="@style/AppThemeTranslator" />
 
         <activity
-            android:name="com.technexus.solutions.soft.translator_activities.SelectLanguageActivity"
+            android:name="com.translator.quick.easy.LT_activities.LT_SelectLanguageActivity"
             android:theme="@style/AppThemeTranslator" />
         <activity
-            android:name="com.technexus.solutions.soft.translator_activities.SplashActivity"
+            android:name="com.translator.quick.easy.LT_activities.LT_SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -43,7 +43,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.technexus.solutions.soft.translator_activities.DetailsHistory"
+            android:name="com.translator.quick.easy.LT_activities.LT_DetailsHistory"
             android:theme="@style/AppThemeTranslator" />
 
         <uses-library

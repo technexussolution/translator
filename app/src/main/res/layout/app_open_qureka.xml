@@ -18,7 +18,7 @@
             android:layout_marginStart="10dp"
             android:layout_marginTop="20dp"
             android:layout_marginBottom="10dp"
-            android:background="@drawable/aviator_qureka_appopen_bg"
+            android:background="@drawable/lt_aviator_qureka_appopen_bg"
             android:gravity="center"
             android:paddingStart="3dp">
 
@@ -64,7 +64,7 @@
                 android:layout_width="16dp"
                 android:layout_height="20dp"
                 android:layout_marginEnd="20dp"
-                android:src="@drawable/aviator_forward"
+                android:src="@drawable/lt_aviator_forward"
                 app:tint="#2379e4" />
         </LinearLayout>
 
@@ -74,7 +74,7 @@
             android:layout_height="match_parent"
             android:layout_below="@+id/btnContinue"
             android:layout_marginTop="10dp"
-            android:background="@drawable/aviator_qureka_appopen_bg2"
+            android:background="@drawable/lt_aviator_qureka_appopen_bg2"
             android:orientation="vertical">
 
             <TextView
@@ -92,7 +92,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginBottom="15dp"
-                android:src="@drawable/aviator_appopen_gif" />
+                android:src="@drawable/lt_aviator_appopen_gif" />
         </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>

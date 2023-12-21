@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="170dp"
-    android:background="@drawable/round_ad_bg">
+    android:background="@drawable/lt_round_ad_bg">
 
     <LinearLayout
         android:id="@+id/mainView"
@@ -42,7 +42,7 @@
                             android:id="@+id/cta2"
                             android:layout_width="60dp"
                             android:layout_height="60dp"
-                            android:background="@drawable/xwsd_white_shape_edit"
+                            android:background="@drawable/lt_white_shape_edit"
                             android:backgroundTint="@color/gray" />
 
                         <LinearLayout
@@ -126,7 +126,7 @@
                     android:layout_marginEnd="10dp"
                     android:layout_marginBottom="15dp"
                     android:layout_weight="20"
-                    android:background="@drawable/xwsd_white_shape_edit"
+                    android:background="@drawable/lt_white_shape_edit"
                     android:backgroundTint="@color/gray" />
             </LinearLayout>
         </LinearLayout>

@@ -12,11 +12,11 @@ android {
         exclude 'META-INF/LICENSE.txt'
         exclude 'META-INF/NOTICE.txt'
     }
-    namespace 'com.technexus.solutions.soft'
+    namespace 'com.translator.quick.easy'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.technexus.solutions.soft"
+        applicationId "com.translator.quick.easy"
         minSdk 24
         targetSdk 34
         versionCode 1
