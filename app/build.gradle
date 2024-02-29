@@ -77,6 +77,4 @@ dependencies {
     annotationProcessor "androidx.lifecycle:lifecycle-compiler:2.6.2"
 
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.28'
-
-
 }

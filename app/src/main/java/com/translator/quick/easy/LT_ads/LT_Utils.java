@@ -237,15 +237,15 @@ public class LT_Utils {
         TypedArray obtainTypedArray2;
         TypedArray obtainTypedArray3;
         ArrayList arrayList = new ArrayList();
-        if (Locale.getDefault().getCountry().toUpperCase().equals(LT_Utils.INDIA_COUNTRY_CODE)) {
+//        if (Locale.getDefault().getCountry().toUpperCase().equals(LT_Utils.INDIA_COUNTRY_CODE)) {
             obtainTypedArray = context.getResources().obtainTypedArray(R.array.language_code_india);
             obtainTypedArray2 = context.getResources().obtainTypedArray(R.array.language_display_name_india);
             obtainTypedArray3 = context.getResources().obtainTypedArray(R.array.language_image_name_india);
-        } else {
-            obtainTypedArray = context.getResources().obtainTypedArray(R.array.language_code);
-            obtainTypedArray2 = context.getResources().obtainTypedArray(R.array.language_display_name);
-            obtainTypedArray3 = context.getResources().obtainTypedArray(R.array.language_image_name);
-        }
+//        } else {
+//            obtainTypedArray = context.getResources().obtainTypedArray(R.array.language_code);
+//            obtainTypedArray2 = context.getResources().obtainTypedArray(R.array.language_display_name);
+//            obtainTypedArray3 = context.getResources().obtainTypedArray(R.array.language_image_name);
+//        }
         for (int i = 0; i < obtainTypedArray.length(); i++) {
             arrayList.add(new LT_Language(obtainTypedArray.getString(i), obtainTypedArray2.getString(i), obtainTypedArray3.getString(i)));
         }
